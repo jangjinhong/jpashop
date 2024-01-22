@@ -8,8 +8,6 @@ import org.springframework.test.annotation.Rollback;
 import org.springframework.test.context.junit4.SpringRunner;
 import org.springframework.transaction.annotation.Transactional;
 
-import static org.assertj.core.api.Assertions.*;
-
 @RunWith(SpringRunner.class) //spring으로 테스트함을 의미 -> juit에 알려주는 용도
 @SpringBootTest
 public class MemberRepositoryTest {

@@ -1,6 +1,7 @@
 package jpabook.jpashop.domain;
 
 import jakarta.persistence.*;
+import jpabook.jpashop.domain.item.Item;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -12,6 +13,8 @@ public class OrderItem {
     @Column(name = "order_item_id")
     private Long id;
 
+    @ManyToOne
+    @JoinColumn(name = "item_id")
     private Item item;
 
     // OrderItem과 Order -> 1개주문=n개주문상품으로이루어짐. 다대일 양방향 

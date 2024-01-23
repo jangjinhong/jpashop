@@ -20,6 +20,6 @@ public class Member {
     private Address address;
 
     // Member, Order => 1 회원이 n개 주문 일대다 관계이므로
-    @OneToMany(mappedBy = "member_id")
+    @OneToMany(mappedBy = "member")
     private List<Order> orders = new ArrayList<>();
 }

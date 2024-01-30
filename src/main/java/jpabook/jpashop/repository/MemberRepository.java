@@ -22,7 +22,7 @@ public class MemberRepository {
     }
 
     public List<Member> findAll() { //"JPQL 사용" != SQL
-        return em.createQuery("select m form Member m", Member.class)
+        return em.createQuery("select m from Member m", Member.class)
                 .getResultList();
     }
 

@@ -2,12 +2,14 @@ package jpabook.jpashop.domain;
 
 import jakarta.persistence.*;
 import lombok.Getter;
+import lombok.RequiredArgsConstructor;
 import lombok.Setter;
 
 import static jakarta.persistence.FetchType.*;
 
 @Entity
 @Getter @Setter
+@RequiredArgsConstructor
 public class Delivery {
 
     @Id @GeneratedValue
